@@ -25,6 +25,7 @@ function App() {
   const [productos, setProductos] = useState([]);
   const [error, setError] = useState(null);
   const [cargando, setCargando] = useState(true);
+  const [categorias, setCategorias] = useState([]);
 
   // Guardar carrito en LocalStorage cada vez que cambie
   useEffect(() => {
@@ -53,7 +54,12 @@ function App() {
     fetch(SOURCE_PRODUCTOS)
       .then(response => response.json())
       .then(data => {
+        // Guardar productos
         setProductos(data);
+        // Extraer categorías únicas de los productos para crear filtro
+        const categoriasUnicas = [...new Set(data.map(product => product.categoria))];
+        setCategorias(categoriasUnicas);
+        // Actualizar estado de carga de datos de productos
         setCargando(false);
       })
       .catch(error => {
@@ -86,6 +92,7 @@ function App() {
             cart={cart}
             addToCart={addToCart}
             removeFromCart={removeFromCart}
+            categorias={categorias}
           />
         )}
         <Carrito cart={cart} removeFromCart={removeFromCart} />
