@@ -29,7 +29,7 @@ function ProductCard({ producto, enElCarrito, addToCart, removeFromCart }) {
                     </div>
                     <p className="card-text py-2">{descripcion}</p>
                     <div className="product-actions">
-                        <a href="#" className="btn btn-light border-primary">Ir al producto</a>
+                        <a href="#" className="btn btn-dark text-light border-primary">Ir al producto</a>
                         {enElCarrito ? (
                             <button onClick={() => {
                                 removeFromCart(id);
