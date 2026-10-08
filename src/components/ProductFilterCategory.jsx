@@ -16,7 +16,7 @@ function ProductFilterCategory({ categorias, setCategoriaSeleccionada }) {
     return (
         <form onSubmit={handleSubmit} id="filtro-categorias" className="border border-2 border-secondary rounded-4 bg-light my-3 py-2">
             <h4 className="text-center fw-light text-muted mb-2">Filtrar por categoría</h4>
-            <div className="form-check form-check-inline d-flex flex-wrap gap-3 my-3">
+            <div className="form-check form-check-inline d-flex flex-wrap justify-content-center gap-3 my-3">
                 <ProductCategoryRadio
                     categoria="Todas"
                     value="Todas"
