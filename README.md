@@ -1,16 +1,24 @@
-# React + Vite
+# Proyecto de página web para tienda de videojuegos (React + Vite)
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+El proyecto consiste en una maqueta de página de inicio para una tienda online de videojuegos. El proyecto se desarrolló usando React.
+
+
 
 Currently, two official plugins are available:
 
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
-## React Compiler
+## Cómo utilizar
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+Para ejecutar el proyecto y probar la página generada, se pueden usar dos métodos:
+- Acceder a la página publicada en GitHub Pages a través del siguiente enlace: `https://ncarrizoduoc.github.io/frontend1-semana9/`
+- Descargar el proyecto y, desde la carpeta raíz, abrir una línea de comandos. Ejecutar los comandos `npm install` (para descargar las dependencias del proyecto) y `npm run dev` para desplegar la página web en un servidor local.
 
-## Expanding the ESLint configuration
+## Funcionalidades principales de la página
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### Carga dinámica de productos ###
+
+Los datos productos se cargan dinámicamente desde un archivo JSON y se renderizan en tarjetas (Cards) usando componentes Bootstrap. Para cada producto se incluye una imagen, precio (normal y oferta), título, descripción y botones para ir a la página de producto y agregar al carrito.
+
+
