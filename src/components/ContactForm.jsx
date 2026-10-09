@@ -49,7 +49,7 @@ function ContactForm() {
     const [aceptoValido, setAceptoValido] = useState(true);
 
     return (
-        <form action="/api/contacto" methdo="post" onSubmit={submitForm}
+        <form id="formulario-contacto" action="/api/contacto" methdo="post" onSubmit={submitForm}
             className="container text-start bg-light border border-2 border-secondary my-3 p-5">
             <h1 className="fw-bold mb-4">Contáctanos</h1>
             <div className="row g-3">
