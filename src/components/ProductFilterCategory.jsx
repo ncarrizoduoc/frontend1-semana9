@@ -18,7 +18,7 @@ function ProductFilterCategory({ categorias, setCategoriaSeleccionada }) {
             <h4 className="text-center fw-light text-muted mb-2">Filtrar por categoría</h4>
             <div className="form-check form-check-inline d-flex flex-wrap justify-content-center gap-3 my-3">
                 <ProductCategoryRadio
-                    categoria="Todas"
+                    categoria="Todas las categorías"
                     value="Todas"
                     checked={seleccionParcial === "Todas"}
                     onChange={handleChange}
