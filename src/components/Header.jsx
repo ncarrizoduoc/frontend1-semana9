@@ -39,9 +39,6 @@ function Header({cart}) {
                             <li className="nav-item">
                                 <a id="nav-contactanos" className="nav-link" href="#">Contáctanos</a>
                             </li>
-                            <li className="nav-item d-none d-lg-flex align-items-center">
-                                <span id="nav-texto" className="navbar-text text-white px-3">¡Bienvenido!</span>
-                            </li>
                         </ul>
                     </div>
                     <a href="carrito.html" className="position-relative d-flex align-items-center p-2">
