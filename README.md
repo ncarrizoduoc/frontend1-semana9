@@ -1,13 +1,6 @@
-# Proyecto de página web para tienda de videojuegos (React + Vite)
+# Proyecto de página web para tienda de videojuegos (React + Vite) #
 
 El proyecto consiste en una maqueta de página de inicio para una tienda online de videojuegos. El proyecto se desarrolló usando React.
-
-
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
 
 ## Cómo utilizar
 
