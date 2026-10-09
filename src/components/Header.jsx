@@ -38,7 +38,7 @@ function Header({cart}) {
                             </li>
                         </ul>
                     </div>
-                    <a href="carrito.html" className="position-relative d-flex align-items-center p-2">
+                    <a href="#carrito" className="position-relative d-flex align-items-center p-2">
                         <svg xmlns="http://www.w3.org/2000/svg" width="25" height="25" fill="white" className="bi bi-cart d-block"
                             viewBox="0 0 16 16">
                             <path
