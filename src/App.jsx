@@ -6,6 +6,7 @@ import Hero from './components/Hero'
 import Carrusel from './components/Carrusel'
 import Productos from './components/Products'
 import Carrito from './components/Carrito'
+import ContactForm from './components/ContactForm'
 
 const STORAGE_KEY = 'gamestore-carrito';
 const SOURCE_PRODUCTOS = `${import.meta.env.BASE_URL}data/productos.json`;
@@ -96,6 +97,8 @@ function App() {
           />
         )}
         <Carrito cart={cart} removeFromCart={removeFromCart} />
+        <ContactForm/>
+
       </main>
       <Footer />
     </>
