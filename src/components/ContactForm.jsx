@@ -37,7 +37,7 @@ function ContactForm() {
         setAceptoValido(aceptoOk);
 
         if (nombreOk && correoOk && tipoOk && asuntoOk && detalleOk && aceptoOk) {
-            alert("Formulario enviado");
+            alert("Se ha enviado su solicitud de contacto.");
         }
     };
 
