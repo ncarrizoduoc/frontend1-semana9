@@ -5,7 +5,7 @@ import CarritoCantidad from "./CarritoCantidad.jsx";
 function Cart({ cart, removeFromCart }) {
 
     return (
-        <section className="container col my-3">
+        <section id="carrito" className="container col my-3">
             <div className="d-flex justify-content-between align-items-center my-4">
                 <h1 className="mb-0 ">Carrito de compras</h1>
             </div>
