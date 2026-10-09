@@ -1,4 +1,4 @@
-function ProductCategoryRadio({ categoria, value, checked, onChange }) {
+function ProductCategoryRadio({ categoria, value, checked, handleChange }) {
     return (
         <div className="form-check">
             <input
@@ -7,7 +7,7 @@ function ProductCategoryRadio({ categoria, value, checked, onChange }) {
                 name="radioDefault"
                 value={value}
                 checked={checked}
-                onChange={onChange}
+                onChange={handleChange}
             />
             <label className="form-check-label">
                 {categoria}
