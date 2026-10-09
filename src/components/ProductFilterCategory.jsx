@@ -4,10 +4,12 @@ import { useState } from "react";
 function ProductFilterCategory({ categorias, setCategoriaSeleccionada }) {
     const [seleccionParcial, setSeleccionParcial] = useState("Todas");
 
+    // Cambiar radio seleccionado con categoria del producto
     const handleChange = (event) => {
         setSeleccionParcial(event.target.value);
     };
 
+    // Aplicar categoria seleccionada y filtrar productos
     const handleSubmit = (event) => {
         event.preventDefault();
         setCategoriaSeleccionada(seleccionParcial);
