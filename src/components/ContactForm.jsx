@@ -18,7 +18,7 @@ function ContactForm() {
         // Validar que el nombre tenga menos de 100 caracteres y no sea un texto en blanco
         const nombreOk = nombre.length > 0 && nombre.length <= 100;
         // Validar que el correo cumpla con el formato
-        const correoOk = correo.length > 0 && /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/.test(correo);
+        const correoOk = correo.length > 0 && emailRegex.test(correo);
         // Validar que se haya seleccionado el tipo de solicitud
         const tipoOk = tipo !== "";
         // Validar que el asunto tenga menos de 100 caracteres y no sea un texto en blanco
@@ -35,7 +35,6 @@ function ContactForm() {
         setAsuntoValido(asuntoOk);
         setDetalleValido(detalleOk);
         setAceptoValido(aceptoOk);
-
 
         if (nombreOk && correoOk && tipoOk && asuntoOk && detalleOk && aceptoOk) {
             alert("Formulario enviado");
@@ -88,7 +87,7 @@ function ContactForm() {
                     </div>
                 </div>
                 <div className="col-12">
-                    <label htmlFor="contactoDetalle" className="form-label">Detalle</label>
+                    <label htmlFor="contactoDetalle" className="form-label">Mensaje</label>
                     <textarea className={`form-control border-secondary ${detalleValido ? '' : 'is-invalid'}`} id="contactoDetalle" name="contactoDetalle" placeholder="Describa detalladamente el motivo de su solicitud" ></textarea>
                     <div className="invalid-feedback">
                         Debe ingresar el detalle de su solicitud (hasta 1000 caracteres).
@@ -106,7 +105,7 @@ function ContactForm() {
                     </div>
                 </div>
                 <div className="col-12">
-                    <button className="btn btn-primary" type="submit">Enviar solicitud</button>
+                    <button className="btn btn-dark text-light" type="submit">Enviar solicitud</button>
                 </div>
             </div>
         </form>
