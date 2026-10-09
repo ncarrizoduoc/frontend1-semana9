@@ -4,7 +4,7 @@ import simpsonsGameImage from "../assets/img/featured/simpsons_game.jpg";
 
 function Carrusel() {
     return (
-        <section id="productos-destacados" className="bg-light py-3">
+        <section id="carrusel-destacados" className="bg-light py-3">
             <div className="container-fluid px-0">
                 <div className="container">
                     <div className="text-start mb-4">
