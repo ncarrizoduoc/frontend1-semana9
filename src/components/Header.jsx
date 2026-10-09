@@ -25,19 +25,16 @@ function Header({cart}) {
                                 <a className="nav-link active" aria-current="page" href="index.html">Inicio</a>
                             </li>
                             <li className="nav-item">
-                                <a id="nav-consolas" className="nav-link" href="#">Consolas</a>
+                                <a id="nav-destacados" className="nav-link" href="#carrusel-destacados">Destacados</a>
                             </li>
                             <li className="nav-item">
-                                <a id="nav-videojuegos" className="nav-link" href="#">Videojuegos</a>
+                                <a id="nav-novedades" className="nav-link" href="#cuadricula-productos">Novedades</a>
                             </li>
                             <li className="nav-item">
-                                <a id="nav-accesorios" className="nav-link" href="#">Accesorios</a>
+                                <a id="nav-carrito" className="nav-link" href="#carrito">Mi carrito</a>
                             </li>
                             <li className="nav-item">
-                                <a id="nav-sobre-nosotros" className="nav-link" href="#">Sobre nosotros</a>
-                            </li>
-                            <li className="nav-item">
-                                <a id="nav-contactanos" className="nav-link" href="#">Contáctanos</a>
+                                <a id="nav-contactanos" className="nav-link" href="#formulario-contacto">Contáctanos</a>
                             </li>
                         </ul>
                     </div>
